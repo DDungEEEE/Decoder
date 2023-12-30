@@ -1,0 +1,12 @@
+function button(props){
+    const [isClicked, setIsClicked] = React.useState(false);
+
+    return React.createElement(
+        'button',
+        { onClick : () => setIsClicked(true)},
+        isClicked ? 'Clicked' : 'Click Here!'
+    )
+}
+
+const domContainer = document.querySelector('#root');
+ReactDOM.render(React.createElement(button), domContainer);
