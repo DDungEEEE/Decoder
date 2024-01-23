@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Clock from './practice_02/Clock';
 import Library from './practice/Library';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Library />
+    <Clock/>
   </React.StrictMode>
 );
 
